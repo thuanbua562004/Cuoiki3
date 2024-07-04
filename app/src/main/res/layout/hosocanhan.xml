@@ -95,7 +95,6 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:background="@color/primarykey_color_btn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="25">

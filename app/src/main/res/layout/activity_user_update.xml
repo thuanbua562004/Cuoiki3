@@ -34,14 +34,16 @@
 
             <ImageButton
                 android:id="@+id/openpicture"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="232dp"
-                android:layout_marginTop="166dp"
-                android:layout_marginEnd="139dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="157dp"
+                android:layout_marginEnd="146dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
                 android:src="@drawable/chageavatar" />
 
             <TextView
@@ -217,7 +219,6 @@
 
         </RelativeLayout>
         <LinearLayout
-            android:background="@color/primarykey_color_btn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="50">

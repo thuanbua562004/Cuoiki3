@@ -27,21 +27,27 @@
             android:id="@+id/txtTitle"
             android:layout_width="match_parent"
             android:layout_height="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="25dp"
             android:layout_marginTop="25dp"
-            android:layout_marginLeft="10dp"
             android:text="Tieu de thong bao " />
 
         <ImageView
+            android:layout_gravity="center"
             android:id="@+id/imgnoti"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="158dp"
             android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/txtinfo"
             android:layout_width="match_parent"
-            android:layout_height="290dp"
+            android:layout_height="427dp"
+            android:layout_margin="30dp"
+            android:textSize="18dp"
             android:text="Noi Dung Thong Bao" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
