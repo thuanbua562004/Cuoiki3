@@ -8,30 +8,41 @@
     tools:context=".NotifidetailActivity">
 
     <LinearLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView18"
+        <LinearLayout
+            android:background="@color/blue"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:textSize="25dp"
-            android:textColor="@color/primarykey_color_text"
-            android:background="@color/primarykey_color_btn"
+            android:layout_height="50dp">
 
-            android:text="Thông Bao" />
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/back"/>
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:text="Thông Báo Chi Tiết" />
+                />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/txtTitle"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_width="350dp"
+            android:layout_height="106dp"
             android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:textSize="25dp"
             android:layout_marginTop="25dp"
-            android:text="Tieu de thong bao " />
+            android:layout_marginRight="32dp"
+            android:text="Tieu de thong bao "
+            android:textSize="20dp" />
 
         <ImageView
             android:layout_gravity="center"

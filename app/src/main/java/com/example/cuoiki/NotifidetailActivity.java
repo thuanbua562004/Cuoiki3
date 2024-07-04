@@ -2,6 +2,7 @@ package com.example.cuoiki;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,19 +12,26 @@ import com.bumptech.glide.Glide;
 
 public class NotifidetailActivity extends AppCompatActivity {
     TextView txtTitle , txtNotiInfo  ;
-    ImageView img ;
+    ImageView img , back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifi_detail);
         anhxa();
         setNotiInfo();
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void anhxa() {
         txtTitle = findViewById(R.id.txtTitle);
         txtNotiInfo = findViewById(R.id.txtinfo);
         img = findViewById(R.id.imgnoti);
+        back = findViewById(R.id.back);
     }
 
     private void setNotiInfo() {
@@ -39,5 +47,10 @@ public class NotifidetailActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(imageUrl)
                 .into(img);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }

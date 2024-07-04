@@ -1,5 +1,6 @@
 package com.example.cuoiki;
 
+import android.annotation.SuppressLint;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -54,7 +55,8 @@ public class UserUpdate extends AppCompatActivity {
     EditText edtname ,edtemail ,edtquequan, edtnamsinh,edtnganhhoc ;
     String txtname ,txtemail ,txtquequan, txtnamsinh,txtnganhhoc,txtimg ;
     Button btnupdate ;
-    ImageButton btnchoseImg;
+    ImageButton btnchoseImg ;
+    ImageView back ;
     Bitmap bitmap ;
     private static final int REQUEST_CODE_PICK_IMAGE = 2;
     private static final int REQUEST_CODE_PERMISSION = 1;
@@ -79,6 +81,12 @@ public class UserUpdate extends AppCompatActivity {
                     // Mở gallery để chọn ảnh
                     Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE);
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
@@ -203,6 +211,7 @@ public class UserUpdate extends AppCompatActivity {
         edtnganhhoc =findViewById(R.id.txtnganhoc);
         btnupdate = findViewById(R.id.update);
         btnchoseImg = findViewById(R.id.openpicture);
+        back= findViewById(R.id.back);
     }
 
 }

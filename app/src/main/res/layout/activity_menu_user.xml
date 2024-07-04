@@ -14,6 +14,7 @@
         android:orientation="vertical">
 
         <RelativeLayout
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2">
@@ -22,10 +23,10 @@
                 android:id="@+id/nameApp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@color/primarykey_color_btn"
+                android:background="@color/blue"
                 android:gravity="center"
-                android:text="Thong tin ca nhan"
-                android:textColor="@color/primarykey_color_text"
+                android:text="Thông Tin Cá Nhân"
+                android:textColor="@color/white"
                 android:textSize="25dp" />
 
             <LinearLayout
@@ -37,58 +38,54 @@
                 android:layout_marginBottom="100dp"
                 android:layout_weight="5"
                 android:orientation="vertical">
-
                 <Button
-                    android:background="@drawable/image_button_border"
-                    android:backgroundTint="@color/white"
-                    android:textColor="@color/black"
                     android:id="@+id/chitietsv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Chi Tiet Sinh Vien"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:background="@drawable/image_button_border"
+                    android:text="Chi Tiết Sinh Viên"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <Button
                     android:layout_weight="1"
                     android:id="@+id/capnhatsv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="25dp"
                     android:gravity="center"
-                    android:text="Cap nhat sinh vien" />
-                <Button
-                    android:background="@drawable/image_button_border"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/black"
+                    android:text="Cập Nhật Sinh Viên" />
+                <Button
                     android:layout_weight="1"
                     android:id="@+id/lichhoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="25dp"
                     android:gravity="center"
-                    android:text="Lich Hoc" />
-
-                <Button
-                    android:background="@drawable/image_button_border"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/black"
+                    android:text="Lịch Học" />
+
+                <Button
                     android:layout_weight="1"
                     android:id="@+id/dangxuat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="25dp"
                     android:gravity="center"
-                    android:text="Dang xuat" />
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:text="Đăng Xuất" />
             </LinearLayout>
 
         </RelativeLayout>
 
         <LinearLayout
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="25">

@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:background="@color/white"
         android:layout_weight="20"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +20,7 @@
             android:layout_weight="2">
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="71dp"
                 android:layout_weight="2"
@@ -28,10 +30,10 @@
                     android:id="@+id/nameApp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@color/primarykey_color_btn"
+                    android:background="@color/blue"
                     android:gravity="center"
                     android:text="THÔNG BÁO"
-                    android:textColor="@color/primarykey_color_text"
+                    android:textColor="@color/white"
                     android:textSize="25dp" />
 
 
@@ -40,17 +42,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="471dp"
+                android:layout_below="@+id/linearLayout"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginBottom="96dp"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="52dp"
                 android:layout_weight="5"
                 android:orientation="vertical">
 
                 <ListView
                     android:id="@+id/listview"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp" />
 
             </LinearLayout>
 

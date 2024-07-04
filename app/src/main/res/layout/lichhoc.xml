@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:background="@color/white"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-
             android:gravity="center"
             android:layout_weight="5"
             android:layout_width="match_parent"

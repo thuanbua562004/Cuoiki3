@@ -8,19 +8,23 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:background="@color/white"
+
         android:layout_weight="20"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2">
+            android:layout_weight="2"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="268dp"
+                android:layout_height="250dp"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -28,18 +32,19 @@
                     android:id="@+id/nameApp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@color/primarykey_color_btn"
+                    android:background="@color/blue"
                     android:gravity="center"
                     android:text="Chi Tiết Sinh Viên"
-                    android:textColor="@color/primarykey_color_text"
+                    android:textColor="@color/white"
                     android:textSize="25dp" />
 
                 <ImageView
                     android:id="@+id/imgacount"
-                    android:layout_width="205dp"
-                    android:layout_height="142dp"
+                    android:layout_width="119dp"
+                    android:layout_height="137dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/people" />
 
                 <TextView
@@ -58,11 +63,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="275dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
+                android:layout_height="330dp"
                 android:layout_marginStart="0dp"
-                android:layout_marginBottom="96dp"
                 android:layout_weight="5"
                 android:orientation="vertical">
 
@@ -76,43 +78,43 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:textSize="20dp"
                     android:id="@+id/txtemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Email: NguyenLuongTri@gmail.com " />
+                    android:text="Email: NguyenLuongTri@gmail.com "
+                    android:textSize="20dp" />
 
                 <TextView
-                    android:textSize="20dp"
                     android:id="@+id/txtquequan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Que Quan : Nha Trang" />
+                    android:text="Que Quan : Nha Trang"
+                    android:textSize="20dp" />
 
                 <TextView
-                    android:textSize="20dp"
                     android:id="@+id/txtnamsinh"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Nam Sinh: 2000" />
+                    android:text="Nam Sinh: 2000"
+                    android:textSize="20dp" />
 
                 <TextView
-                    android:textSize="20dp"
                     android:id="@+id/txtnganhhoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Nganh Hoc" />
+                    android:text="Nganh Hoc"
+                    android:textSize="20dp" />
             </LinearLayout>
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

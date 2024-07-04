@@ -28,10 +28,10 @@
                     android:id="@+id/nameApp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@color/primarykey_color_btn"
+                    android:background="@color/blue"
                     android:gravity="center"
                     android:text="Hồ Sơ Cá Nhân"
-                    android:textColor="@color/primarykey_color_text"
+                    android:textColor="@color/white"
                     android:textSize="25dp" />
 
 

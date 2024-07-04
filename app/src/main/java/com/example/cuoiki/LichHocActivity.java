@@ -2,6 +2,9 @@ package com.example.cuoiki;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -26,6 +29,7 @@ import java.util.ArrayList;
 public class LichHocActivity extends AppCompatActivity {
     String url ="http://192.168.1.41/QLSV/lichhoc.php";
     public ListView listView ;
+    ImageView back ;
     public LichHocAdapter lichHocAdapter ;
     ArrayList<MonHoc> listHoc = new ArrayList<>();
     @Override
@@ -36,6 +40,13 @@ public class LichHocActivity extends AppCompatActivity {
         lichHocAdapter = new LichHocAdapter(listHoc,LichHocActivity.this);
         listView.setAdapter(lichHocAdapter);
         getLichHoc(url);
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void getLichHoc(String url) {

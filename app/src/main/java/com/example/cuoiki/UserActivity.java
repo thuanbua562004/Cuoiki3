@@ -21,6 +21,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
+import com.bumptech.glide.request.RequestOptions;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -127,9 +129,14 @@ public class UserActivity extends AppCompatActivity {
         txtNganhhoc.setText("Nganh Hoc: "+sv.getNganhhoc());
         txtEmail.setText("Email: "+ sv.getEmail());
         String imageUrl = "http://192.168.1.41/QLSV/" + sv.getImg().toString() ;
-        Glide.with(this)
-                .load(imageUrl)
-                .into(imgUser);
+        if(sv.getImg().toString().equals("null")){
+
+        }else {
+            Glide.with(this)
+                    .load(imageUrl)
+                    .apply(RequestOptions.bitmapTransform(new CircleCrop()))
+                    .into(imgUser);
+        }
     }
     public void menubar(){
         home.setOnClickListener(new View.OnClickListener() {

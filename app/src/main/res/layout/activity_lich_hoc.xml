@@ -14,73 +14,50 @@
         android:orientation="vertical">
 
         <RelativeLayout
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2">
 
-            <TextView
-                android:id="@+id/nameApp"
+            <LinearLayout
+                android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@color/primarykey_color_btn"
-                android:gravity="center"
-                android:text="LICH HOC"
-                android:textColor="@color/primarykey_color_text"
-                android:textSize="25dp" />
+                android:background="@color/blue">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Lịch Học"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+                />
+            </LinearLayout>
 
             <ListView
                 android:id="@+id/listlichhoc"
-                android:layout_width="324dp"
-                android:layout_height="466dp"
-                android:layout_below="@+id/nameApp"
+                android:layout_width="wrap_content"
+                android:layout_height="571dp"
+                android:layout_below="@+id/linearLayout2"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="44dp"
-                android:layout_marginTop="75dp"
+                android:layout_marginTop="35dp"
                 android:layout_marginEnd="44dp"
-                android:layout_marginBottom="75dp" />
+                android:layout_marginBottom="35dp" />
 
         </RelativeLayout>
 
-        <LinearLayout
-            android:background="@color/primarykey_color_btn"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="25">
-            <ImageButton
-                android:contentDescription="Home"
-                android:id="@+id/home"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="6"
-                android:background="@null"
-                app:srcCompat="@drawable/home" />
-            <ImageButton
-                android:contentDescription="News"
-                android:id="@+id/news"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@null"
-                android:layout_weight="5"
-                app:srcCompat="@drawable/news" />
-            <ImageButton
-                android:contentDescription="Users"
-                android:id="@+id/user"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:background="@null"
-                app:srcCompat="@drawable/user" />
-            <ImageButton
-                android:contentDescription="Menu"
-                android:id="@+id/menu"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:background="@null"
-                app:srcCompat="@drawable/menu" />
-        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

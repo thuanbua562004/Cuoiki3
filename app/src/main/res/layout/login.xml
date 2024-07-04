@@ -22,10 +22,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:background="@color/primarykey_color_btn"
+                android:background="@color/blue"
                 android:gravity="center"
                 android:text="Đăng Nhập"
-                android:textColor="@color/primarykey_color_text"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
         </LinearLayout>
 
@@ -89,8 +89,8 @@
             android:layout_marginEnd="42dp"
             android:textSize="20dp"
             android:layout_marginBottom="239dp"
-            android:textColor="@color/primarykey_color_text"
-            android:backgroundTint="@color/primarykey_color_btn"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
             android:text="Đăng Nhập" />
 
         <Button
